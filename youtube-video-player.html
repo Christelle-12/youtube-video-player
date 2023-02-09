@@ -1,65 +1,83 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>YouTube Video Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="youtube-video-page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
-        integrity="sha512-oc9cl5LP2v5lBXl3c+NqCfPi0M8IpJ1uGxhtb8UWjHY2vQ+mKjLalXmivUjr2yuLnkrtDcZMaTk8L06pCkZYNA=="
-        crossorigin="anonymous" />
-</head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>my youtube webpage</title>
+</head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Trending</a>
-            <a href="#">Subscriptions</a>
-        </nav>
-        <div id="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube logo">
+    <header class="header">
+        <div class="logo left">
+            <i id="menu" class="material-icons">menu</i>
+            <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png">
         </div>
-        <form id="search-form">
-            <input type="text" id="search-input" placeholder="Search">
-            <button type="submit" id="search-button">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-        <i class="fas fa-microphone"></i>
+        
+        <div class="search center">
+            <form action="http://www.youtube.com">
+                <input type="text" placeholder="Search" />
+                <button><i class="material-icons">search</i></button>
+            </form>
+            <i class="material-icons mic">mic</i>
+        </div>
+        
+        <div class="icons right">
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons display-this">account_circle</i>
+        </div>
+      
     </header>
     <main>
-        <div id="video-player">
-            <iframe src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <section id="sidebar">
+        <div class=”side-bar”>
+        <div class="nav">
+            <a class="nav-link active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </a>
+            <a class="nav-link">
+                <i class="material-icons">local_fire_department</i>
+                <span>Trending</span>
+            </a>
+            <a class="nav-link">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </a>
         </div>
-        <div id="video-info">
-            <h2>Video Title</h2>
-            <p>Uploaded by <a href="#">Username</a></p>
-            <p>Description of the video goes here</p>
+        <hr>
+            <a class="nav-link">
+               <i class="material-icons">library_add_check</i>
+               <span>Library</span>
+           </a>
+           <a class="nav-link">
+               <i class="material-icons">history</i>
+               <span>History</span>
+           </a>
+           <a class="nav-link">
+               <i class="material-icons">play_arrow</i>
+               <span>Your Videos</span>
+           </a>
+           <a class="nav-link">
+               <i class="material-icons">watch_later</i>
+               <span>Watch Later</span>
+           </a>
+           <a class="nav-link">
+               <i class="material-icons">thumb_up</i>
+               <span>Liked Videos</span>
+           </a>
         </div>
-        <div id="suggested-videos">
-            <h3>Suggested Videos</h3>
-            <ul>
-                <li>
-                    <img src="video-thumbnail-1.png" alt="Video Thumbnail">
-                    <h4>Video Title 1</h4>
-                </li>
-                <li>
-                    <img src="video-thumbnail-2.png" alt="Video Thumbnail">
-                    <h4>Video Title 2</h4>
-                </li>
-                <li>
-                    <img src="video-thumbnail-3.png" alt="Video Thumbnail">
-                    <h4>Video Title 3</h4>
-                </li>
-            </ul>
-        </div>
+
+        </section>
+        <section id="content">
+
+        </section>
     </main>
 </body>
-
 </html>
+
